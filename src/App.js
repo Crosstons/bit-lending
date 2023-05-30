@@ -4,12 +4,16 @@ import Dashboard from './components/Dashboard';
 
 function App() {
   return (
+    <div>
     <Router>
+      <div>
       <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      </div>
     </Router>
+    </div>
   );
 }
 
